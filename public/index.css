@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right ,rgb(151, 194, 214),#fff);
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-details{
+    padding: 0  .4rem;
+}
+
+.Tours{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.image{
+    top:0;
+    width: 20rem;
+    height: 14rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.description{
+    width: 19.2rem;
+    font-size: 1.4rem;
+}
+
+.heading{
+    font-size: 3rem;
+    padding: .3rem 1.2rem;
+    border: .35rem dashed blue;
+    margin: 1.3rem;
+    font-weight: 1000;
+    font-family: 'Dancing Script', cursive;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem .3rem black, -.1rem -.1rem .6rem black;
+}
+
+
+
+.tour-price{
+    background-color: green;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    padding: .3rem;
+    margin:.6rem 0;
+}
+
+.tour-name{
+    font-size: 1.8rem;
+    font-weight: 1000;
+}
+
+.read-more{
+    color: green;
+}
+
+.btn-read{
+    appearance: none;
+    font-size: 1.3rem;
+    width: 17rem;
+    margin: 1rem 0;
+    border: .15rem  solid  blue;
+    border-radius: .4rem;
+    position: relative;
+    z-index: 999;
+    transition: all .5s;
+    background-color: rgb(195, 224, 238);
+}
+
+.btn-read::before{
+    content: " ";
+    position: absolute;
+    background-color: blue;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .5s;
+}
+
+.btn-read:hover::before{
+  transform: scaleX(1);
+} 
+
+.btn-read:hover{
+    color: #fff;
+}
+
+
+.refresh{
+    background-image: linear-gradient(to right ,rgb(151, 194, 214),#fff);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.refresh h2{
+    font-size: 2.4rem;
+}
